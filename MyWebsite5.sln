@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebsite5", "MyWebsite5\MyWebsite5.csproj", "{A7E9109B-DA92-433E-9AA2-F6A78ACA937A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebsite5", "MyWebsite5\MyWebsite5.csproj", "{A7E9109B-DA92-433E-9AA2-F6A78ACA937A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMyWebsite5.1", "MyMyWebsite5.1\MyMyWebsite5.1.csproj", "{F3A5A5E5-7FE4-44B4-AC5B-33622E8B75EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebsite5.1", "MyMyWebsite5.1\MyWebsite5.1.csproj", "{F3A5A5E5-7FE4-44B4-AC5B-33622E8B75EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
