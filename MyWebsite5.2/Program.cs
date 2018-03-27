@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 
 namespace MyWebsite5._2
 {
+    /// <summary>
+    /// Hangfire 任务调度服务(Mysql)。
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)
