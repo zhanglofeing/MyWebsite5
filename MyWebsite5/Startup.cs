@@ -1,5 +1,7 @@
 ﻿using System;
 using Hangfire;
+using Hangfire.Console;
+using Hangfire.RecurringJobExtensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -21,7 +23,15 @@ namespace MyWebsite5
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHangfire(r => r.UseSqlServerStorage(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddHangfire(r => 
+            {
+                r.UseSqlServerStorage(Configuration.GetConnectionString("DefaultConnection"));
+                r.UseConsole();
+
+                r.UseDefaultActivator();
+
+                CronJob.AddOrUpdate("Jobs/hangfireJobs.json");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
